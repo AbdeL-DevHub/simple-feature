@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+.main{
+    font-family: 'inter', sans-serif;
+    padding:0;
+    background-image: url(resources/Background_image@3x.png);
+    background-color: hsl(222, 36%, 11%);
+    color: rgb(236, 235, 235);
+    min-height: 100vh;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h1 + p {
+    text-align: center;  
+}
+
+h1 {
+    margin:0;
+}
+
+h1 + p {
+    color:rgb(170, 170, 170);
+    margin-bottom: 3rem;
+}
+
+h3 + p{
+    color:rgb(224, 223, 223);
+    font-weight: 300;
+    max-width: 30ch;
+    
+}
+.cards > h3 {
+    font-size: 1.2rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+    gap:2rem;
+    width: 70%;
+    min-width: 50%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    text-align: left;
+    padding:1.5rem;
+    background-color: #212936;
+    width: 30%;
+    min-width: 25%;
+    flex: auto;
+    /* align-items: stretch; */
+}
+
+h3 {
+    margin-top:1rem;
+    margin-bottom: 0;
+    text-align: start;
+}
+
+
+
+.cards > img {
+    border-radius: 1rem;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+.card2{
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+}
+
+
+.card1::before {
+    content: "\2615";
+    font-weight: 900;
+    font-size: 2rem;
+}
+.card2::before{
+    content: "\2614";
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.card3::before {
+    content: "\26EA";
+    font-weight: 900;
+    font-size: 2rem;
+}
