@@ -64,7 +64,7 @@ h3 + p{
     width: 30%;
     min-width: 25%;
     flex: auto;
-    /* align-items: stretch; */
+    transition: transform 0.5s ease;
 }
 
 h3 {
@@ -108,4 +108,8 @@ h3 {
     content: "\26EA";
     font-weight: 900;
     font-size: 2rem;
+}
+
+.cards:hover {
+    transform: scale(1.05);
 }
