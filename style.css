@@ -113,3 +113,32 @@ h3 {
 .cards:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+
+    .main {
+        padding: 2rem 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h1 + p {
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .cards {
+        width: 100%;
+        min-width: 0;
+        flex: none;
+    }
+
+}
